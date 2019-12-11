@@ -1,5 +1,10 @@
+html {
+  background-size: cover !important;
+}
+
 .App {
   text-align: center;
+  color: whitesmoke;
 }
 
 .App-logo {
@@ -30,4 +35,36 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.nasa-title {
+  font-family: 'Lilita One', cursive;
+  font-size: 2.2rem;
+  text-shadow: 2px 2px black;
+  margin-bottom: 0px;
+}
+
+.explanation {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  bottom: 0px;
+  position: fixed;
+  margin: 100px 150px;
+  text-shadow: 2px 2px black;
+}
+
+.date {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  margin: 10px;
+  font-family: 'Inconsolata', monospace;
+
+}
+
+.header > h3 {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  margin-top: 0px;
+  text-shadow: 1px 1px black;
+
 }
