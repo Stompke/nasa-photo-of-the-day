@@ -1,11 +1,13 @@
 import React from 'react';
+import { NasaDateContainer } from './NasaDateStyles'
 
 const NasaDate = (props) => {
 
     return (
-        <div  className="date">
+        <NasaDateContainer >
         {props.date}
-        </div>
+        
+        </NasaDateContainer>
     )
 }
 

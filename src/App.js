@@ -7,6 +7,8 @@ import Explanation from './components/Explanation';
 import Header from './components/Header';
 import NewDate from './components/NewDate';
 
+
+
 function App() {
   const [nasaData, setNasaData] = useState([]);
   const [newDate, setNewDate] = useState(``);
@@ -33,6 +35,7 @@ function App() {
       <NasaDate date={nasaData.date} />
       <NewDate setNewDate={setNewDate} />
       <Explanation explanation={nasaData.explanation} />
+      
     </div>
   );
 }

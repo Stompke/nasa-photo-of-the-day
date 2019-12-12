@@ -1,15 +1,19 @@
 import React from 'react';
 import NasaTitle from './NasaTitle';
+import { Container, Subtitle } from './HeaderStyles';
+import { Logo } from './LogoStyles.js';
+import sattelite from '../images/satellite-pngrepo-com.png';
 
 
 
 const Header = (props) => {
 
     return (
-        <div className='header'>
+        <Container className='header'>
             <NasaTitle title={props.title}/>
-            <h3>Nasa - Image of the Day</h3>
-        </div>
+            <Subtitle>Nasa - Image of the Day</Subtitle>
+            <Logo src={sattelite}></Logo>
+        </Container>
     )
 }
 

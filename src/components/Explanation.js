@@ -1,12 +1,13 @@
 import React from 'react';
+import { ExplanationStyles } from './ExplanationStyles.js';
 
 const Explanation = (props) => {
 
 
     return (
-        <div className="explanation">
+        <ExplanationStyles >
         {props.explanation}
-        </div>
+        </ExplanationStyles>
     )
 }
 
