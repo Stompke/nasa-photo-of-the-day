@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import { DateInput, ButtonInput } from './NewDateStyles';
 
 const NewDate = (props) => {
 
-const [day, setDay] = useState('');
-const [month, setMonth] = useState('');
-const [year, setYear] = useState('');
+const [day, setDay] = useState('5');
+const [month, setMonth] = useState('7');
+const [year, setYear] = useState('2018');
 
 // let dayInput = document.querySelector('#day');
 // let dayInputText = dayInput.textContent;
@@ -14,19 +15,30 @@ const [year, setYear] = useState('');
 //     console.log('changed day')
 // }, [day])
 
+const handleKeyPress = (event) => {
+    if(event.key === 'Enter'){
+      props.setNewDate('&date=' + year +'-' + month +'-' + day)
+
+    }
+  }
+
+
     return (
         <div>
-             <input placeholder='day' onKeyUp={() => setDay(document.querySelector('#dayInput').value)} id="dayInput" ></input>
-             <input placeholder='month' onKeyUp={() => setMonth(document.querySelector('#monthInput').value)} id="monthInput" ></input>
-             <input placeholder='Year' onKeyUp={() => setYear(document.querySelector('#yearInput').value)} id="yearInput" ></input>
+             <DateInput onKeyPress={handleKeyPress} placeholder='day' onKeyUp={() => setDay(document.querySelector('#dayInput').value)} id="dayInput" ></DateInput>
+             <DateInput onKeyPress={handleKeyPress} placeholder='month' onKeyUp={() => setMonth(document.querySelector('#monthInput').value)} id="monthInput" ></DateInput>
+             <DateInput onKeyPress={handleKeyPress} placeholder='Year' onKeyUp={() => setYear(document.querySelector('#yearInput').value)} id="yearInput" ></DateInput>
+
+
+
 
         
-        <button onClick={() => {
+        <ButtonInput onClick={() => {
             props.setNewDate('&date=' + year +'-' + month +'-' + day)
             
             }}>
             Get New Date
-        </button>
+        </ButtonInput>
 
         </div>
     )

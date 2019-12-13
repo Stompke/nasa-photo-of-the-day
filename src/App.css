@@ -1,10 +1,36 @@
-html {
+html, body {
   background-size: cover !important;
+  /* animation: Bg-Image infinite 2s linear; */
+  /* height: 100%;
+  margin: 0; */
 }
+
+
+
+
+/* @keyframes Bg-Image {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2);
+  }
+} */
+
 
 .App {
   text-align: center;
   color: whitesmoke;
+  /* min-height: 100%;
+  background: url("https://apod.nasa.gov/apod/image/1912/m78ldn1622barnardsloopJulio1100.jpg") center center no-repeat fixed;
+  background-size: cover !important;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(51,51,51,0.7);
+  z-index: 10; */
 }
 
 .App-logo {

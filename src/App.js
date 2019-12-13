@@ -27,13 +27,14 @@ function App() {
   },[newDate]);
 
   const theHtml = document.querySelector('html');
-  theHtml.style.background = "url("+nasaData.url+" ) no-repeat center center fixed "
+  theHtml.style.background = "#000000 url("+nasaData.url+" ) no-repeat center center fixed "
 
   return (
     <div className="App">
       <Header title={nasaData.title}/>
       <NasaDate date={nasaData.date} />
-      <NewDate setNewDate={setNewDate} />
+      <NewDate  setNewDate={setNewDate} />
+      {/* <Numbers /> */}
       <Explanation explanation={nasaData.explanation} />
       
     </div>
