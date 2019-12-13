@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
+
 import "./App.css";
 import NasaImage from './components/NasaImage';
 import NasaDate from './components/NasaDate';
 import Explanation from './components/Explanation';
 import Header from './components/Header';
 import NewDate from './components/NewDate';
+import Numbers from './components/Numbers';
+import AdamCard from './components/AdamCard';
 
 
 
@@ -27,7 +30,8 @@ function App() {
   },[newDate]);
 
   const theHtml = document.querySelector('html');
-  theHtml.style.background = "#000000 url("+nasaData.url+" ) no-repeat center center fixed "
+  theHtml.style.background = "#000000 url(" + nasaData.url + " ) no-repeat center center fixed"
+
 
   return (
     <div className="App">
@@ -35,6 +39,7 @@ function App() {
       <NasaDate date={nasaData.date} />
       <NewDate  setNewDate={setNewDate} />
       {/* <Numbers /> */}
+      {/* <AdamCard /> */}
       <Explanation explanation={nasaData.explanation} />
       
     </div>
