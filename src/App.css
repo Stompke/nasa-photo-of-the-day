@@ -1,11 +1,42 @@
+html, body {
+  background-size: cover !important;
+  /* animation: Bg-Image infinite 2s linear; */
+  /* height: 100%;
+  margin: 0; */
+}
+
+
+
+
+/* @keyframes Bg-Image {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2);
+  }
+} */
+
+
 .App {
   text-align: center;
+  color: whitesmoke;
+  /* min-height: 100%;
+  background: url("https://apod.nasa.gov/apod/image/1912/m78ldn1622barnardsloopJulio1100.jpg") center center no-repeat fixed;
+  background-size: cover !important;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(51,51,51,0.7);
+  z-index: 10; */
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+  /* height: 40vmin; */
+  /* pointer-events: none; */
 }
 
 .App-header {
@@ -30,4 +61,37 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.nasa-title {
+  /* font-family: 'Lilita One', cursive;
+  font-size: 2.2rem;
+  text-shadow: 2px 2px black;
+  margin-bottom: 0px; */
+}
+
+.explanation {
+  /* font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  bottom: 0px;
+  position: fixed;
+  margin: 100px 150px;
+  text-shadow: 2px 2px black; */
+}
+
+.date {
+  /* position: fixed;
+  top: 0px;
+  right: 0px;
+  margin: 10px;
+  font-family: 'Inconsolata', monospace;
+  text-shadow: 1px 1px black; */
+
+}
+
+.header > h3 {
+  /* font-family: 'Saira Extra Condensed', sans-serif;
+  margin-top: 0px;
+  text-shadow: 1px 1px black; */
+
 }
